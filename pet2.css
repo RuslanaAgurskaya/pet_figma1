@@ -1,0 +1,318 @@
+html {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+.wrapper {
+    height:100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 130ch;
+}
+
+/* Свойства Header */
+
+header {
+    background: #007765;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0; 
+    z-index: 9999;
+}
+
+
+header a {
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1em;    
+    margin: 0;
+    padding-right: 1em; 
+}
+
+
+header img {
+    margin-right:5%;
+}
+
+.bigHeaderWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1.5%;
+}
+
+.smallHeaderWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+header a:hover, header a:focus, header a:active {
+    opacity: 0.75;
+}
+ 
+/* Свойства для якорей из хедера */
+
+#Problem {
+	position: relative; /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
+	border-top: 55px solid transparent;
+	margin-top: -55px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+#Problem:before {
+	content: "";
+	position: absolute;
+	top: -2px; /* равен по модулю толщине border */
+	left: 0;
+	right: 0;
+	border-top: 2px solid #ccc; /* собственно то, ради чего всё затевалось */
+}
+
+#PiedPiperCoin {
+	position: relative; /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
+	border-top: 55px solid transparent;
+	margin-top: -55px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+#PiedPiperCoin:before {
+	content: "";
+	position: absolute;
+	top: -2px; /* равен по модулю толщине border */
+	left: 0;
+	right: 0;
+	border-top: 2px solid #ccc; /* собственно то, ради чего всё затевалось */
+}
+#Team {
+	position: relative; /* важно - для того, чтобы псевдоэлемент позиционировался относительно этого элемента */
+	border-top: 55px solid transparent;
+	margin-top: -55px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+#Team:before {
+	content: "";
+	position: absolute;
+	top: -2px; /* равен по модулю толщине border */
+	left: 0;
+	right: 0;
+	border-top: 2px solid #ccc; /* собственно то, ради чего всё затевалось */
+}
+/* Свойства секции Hero1 */
+
+.hero1 {
+    background-image: url(img/hero2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0% auto;
+    width: 100%;
+    padding: 5% 0;    
+}
+
+
+.hero1 h1 {
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 7em;
+    font-weight: 500;
+    line-height:1em;
+    letter-spacing: 0em;    
+    text-align: center;
+    vertical-align: middle;
+} 
+
+/* Свойства секции Problem */
+
+.problem {
+    background: #EEEEEE;
+    margin: 0; 
+    padding-bottom: 4%;
+}
+
+.problem h1 {
+    color: #007765;    
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+        
+}
+
+.problem p {
+    
+    color: #000000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+/* Свойства секции Hero2 */
+
+.hero2 {
+    background-image: url(img/hero1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8.5% 0;
+}
+
+.hero2 p {
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+    font-size: 3.5em;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-align: center;
+        
+}
+
+/* Свойства секции Introducing */
+
+.Introducing {
+    padding-top: 1%;
+    padding-bottom: 6%;
+}
+
+.Introducing h1 {
+    color: #007765;
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+        
+}
+
+.Introducing p {
+    color: #000000;
+    font-family: Roboto, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+
+.Introducing img {
+    float: left;
+    margin-right: 4%;
+ }
+
+/* Свойства секции Team  */
+
+.Team {
+    background: #EEEEEE;
+
+}
+
+.Team h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #007765;    
+}
+
+.Team .Name {
+    color: #007765; 
+    font-family: Roboto, sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 2%;       
+}
+
+.Team .Profession {
+    color: #000000;
+    font-family: Roboto, sans-serif;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1em;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.Team img {
+    border-radius: 50%;
+}
+
+.Teammate {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-self: center;
+    margin: 0 4rem 4rem 4rem;
+}
+
+
+.teamWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -3rem;
+    padding-bottom: 2%;
+}
+
+/* Свойства footer  */
+
+footer {
+    background: #333333;
+}
+
+.footerWrapper {
+    padding: 5% 25%;
+    padding-bottom: 3%;
+}
+
+footer p {
+    color: #EEEEEE;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
